@@ -1,3 +1,24 @@
+        game.StarterGui:SetCore("ChatMakeSystemMessage", {
+    Text = "[System]: Greetings, welcome to the Sasledge DW script this shit isnt finished at all";
+    Color = Color3.new(0, 255, 169);
+    Font = Enum.Font.SourceSansBold;
+    FontSize = Enum.FontSize.Size24;
+})
+
+    game.StarterGui:SetCore("ChatMakeSystemMessage", {
+    Text = "[System]: Dont be an asshole like JXCE Where you steal this script and make your own key system";
+    Color = Color3.new(169, 255, 0);
+    Font = Enum.Font.SourceSansBold;
+    FontSize = Enum.FontSize.Size24;
+})
+    
+    game.StarterGui:SetCore("ChatMakeSystemMessage", {
+    Text = "Make sure you join the sledge queen basement: https://discord.gg/5Fbt4kcAkk";
+    Color = Color3.new(0, 255, 0);
+    Font = Enum.Font.SourceSansBold;
+    FontSize = Enum.FontSize.Size24;
+})
+
 local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
 
 local Window = Rayfield:CreateWindow({
@@ -731,8 +752,27 @@ local Button = Tab:CreateButton({
     end,
  })
 
-
-
+ local Button = Tab:CreateButton({
+    Name = "spawn MPX (idea by ambauttokham)",
+    Callback = function()
+        local workbench = workspace.Interactables:FindFirstChild("Workbench")
+        game.Players.LocalPlayer.Character:PivotTo(workbench:GetPivot() + Vector3.new(0, 5, 0))
+        local args = {
+            [1] = workspace.Interactables.Workbench,
+            [2] = "workbenchblueprintSubMPX",
+        }
+        
+        game:GetService("ReplicatedStorage").Interactables.interaction:FireServer(unpack(args))
+        wait(1.7)
+        local args = {
+            [1] = workspace.Interactables.Workbench,
+            [2] = "workbench",
+        }
+        
+        game:GetService("ReplicatedStorage").Interactables.interaction:FireServer(unpack(args))
+     
+    end,
+ })
 
  local Button = Tab:CreateButton({
     Name = "spawn FAMAS*FRENCH*",
@@ -808,6 +848,28 @@ local Button = Tab:CreateButton({
         local args = {
             [1] = workspace.Interactables.Workbench,
             [2] = "workbenchblueprintMRVolver",
+        }
+        
+        game:GetService("ReplicatedStorage").Interactables.interaction:FireServer(unpack(args))
+        wait(1.7)
+        local args = {
+            [1] = workspace.Interactables.Workbench,
+            [2] = "workbench",
+        }
+        
+        game:GetService("ReplicatedStorage").Interactables.interaction:FireServer(unpack(args))
+     
+    end,
+ })
+
+ local Button = Tab:CreateButton({
+    Name = "spawn Avtomat",
+    Callback = function()
+        local workbench = workspace.Interactables:FindFirstChild("Workbench")
+        game.Players.LocalPlayer.Character:PivotTo(workbench:GetPivot() + Vector3.new(0, 5, 0))
+        local args = {
+            [1] = workspace.Interactables.Workbench,
+            [2] = "workbenchblueprintAvto",
         }
         
         game:GetService("ReplicatedStorage").Interactables.interaction:FireServer(unpack(args))
