@@ -167,8 +167,8 @@ UserInputService.InputBegan:Connect(function(input, Typing)
 	    for i=1, 1 do
             workspace.ServerStuff.dropAmmo:FireServer("rations", "MRE")
             workspace.ServerStuff.dropAmmo:FireServer("rations", "Bottle")
-            workspace.ServerStuff.dropAmmo:FireServer("rations", "Long Ammo")
-              workspace.ServerStuff.dropAmmo:FireServer("rations", "Small Ammo")
+            workspace.ServerStuff.dropAmmo:FireServer("ammo", "Long Ammo")
+              workspace.ServerStuff.dropAmmo:FireServer("ammo", "Small Ammo")
             wait(0.1)
         end
     end
@@ -279,7 +279,7 @@ local perk = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["shie
     perk.pros = { "Increased defense heavily","Damage with melee heavily increased","Pray to the god you belive in"};
     perk.cons = {"The hardsuit takes heavy damage by explosion avoid them."}
    perk.activename = "Death Squad HardSuit"
-   perk.activedetails = ">LAW 1: DO NOT HARM DEATH SQUAD AGENTS LAW 2: ELIMINATE AKK COTESTANTS LAW 3 PROTECT YOUR OWN EXSISTENCE"
+   perk.activedetails = ">LAW 1: DO NOT HARM DEATH SQUAD AGENTS       LAW 2: ELIMINATE AKK COTESTANTS             LAW 3 PROTECT YOUR OWN EXSISTENCE"
    perks.atkmod = 365 -- 2 taps any bosses
    perks.healthmod = 135
    perks.defmod = 1250-- Even tho your beefy explosion still hurt somehow
