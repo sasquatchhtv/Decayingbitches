@@ -1,3 +1,27 @@
+local Rayfield = nil
+    if isfile("UI/ArrayField.lua") then
+        Rayfield = loadstring(readfile("UI/ArrayField.lua"))()
+    else
+        Rayfield = loadstring(game:HttpGet("https://raw.githubusercontent.com/RyAtlasX/Script-Storages/main/ArrayField.lua"))()
+    end
+
+    -- local Rayfield = (isfile("UI/ArrayField.lua") and loadstring(readfile("UI/ArrayField.lua"))()) or loadstring(game:HttpGet("https://raw.githubusercontent.com/Rafacasari/ArrayField/main/v2.lua"))()
+    assert(Rayfield, "Oopps! Rayfield has not been loaded. Maybe try re-joining?") 
+
+    getgenv().SecureMode = true    
+
+local ScriptIsCurrentlyBusy = false
+local Character = nil
+local Humanoid = nil
+local HumanoidRootPart = nil
+local CurrentWorld = ""
+local CurrentPosition = nil
+
+local Settings_DisableRendering = true
+
+local Webhook_Enabled = false
+local Webhook_URL = ""
+
 local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
 
 local Window = Rayfield:CreateWindow({
