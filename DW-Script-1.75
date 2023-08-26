@@ -1,24 +1,3 @@
-        game.StarterGui:SetCore("ChatMakeSystemMessage", {
-    Text = "[System]: Greetings, welcome to the Sasledge DW script this shit isnt finished at all";
-    Color = Color3.new(0, 255, 169);
-    Font = Enum.Font.SourceSansBold;
-    FontSize = Enum.FontSize.Size24;
-})
-
-    game.StarterGui:SetCore("ChatMakeSystemMessage", {
-    Text = "[System]: Dont be an asshole like JXCE Where you steal this script and make your own key system";
-    Color = Color3.new(169, 255, 0);
-    Font = Enum.Font.SourceSansBold;
-    FontSize = Enum.FontSize.Size24;
-})
-    
-    game.StarterGui:SetCore("ChatMakeSystemMessage", {
-    Text = "Make sure you join the sledge queen basement: https://discord.gg/5Fbt4kcAkk";
-    Color = Color3.new(0, 255, 0);
-    Font = Enum.Font.SourceSansBold;
-    FontSize = Enum.FontSize.Size24;
-})
-
 local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
 
 local Window = Rayfield:CreateWindow({
