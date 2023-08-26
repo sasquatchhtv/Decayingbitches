@@ -22,8 +22,6 @@ local Settings_DisableRendering = true
 local Webhook_Enabled = false
 local Webhook_URL = ""
 
-local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
-
 local Window = Rayfield:CreateWindow({
 	Name = "Decaying winter Script by Sledge and Sasquatch",
 	LoadingTitle = "DECAYING WINTER SCRIPT [mak kau hijau edition]",
