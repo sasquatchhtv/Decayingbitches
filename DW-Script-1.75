@@ -237,7 +237,7 @@ dropAmmo:FireServer("scrap", Value)
  })
 local Section = Tab:CreateSection("Modded perks")
  local Button = Tab:CreateButton({
-	Name = "Modded Dammed",
+	Name = "Left 2 Die(Dammed)",
 	Callback = function()
         local perks = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["damn"].basestats
         local perk = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["damn"]
@@ -255,7 +255,7 @@ local Section = Tab:CreateSection("Modded perks")
            perks.shovemod = 1950
            perks.lightatkspeed = 100
             perks.heavyatkspeed = 75 
-            perks.recoilmod = 2000
+            perks.recoilmod = 134
             perks.harvestmod = 100
             perks.accmod = 100
              perks.reloadmod = 250 
@@ -346,6 +346,42 @@ local perk = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["berz
     perks.backpack = true
     perks.falldamagemod = true
     perks.craftcostmod = 1000
+    end,
+})
+local Button = Tab:CreateButton({
+	Name = "The Jungle Dragon(Immo)",
+	Callback = function()
+        local perks = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["fire"].basestats
+local perk = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["fire"]
+    perk.name = "Mad Lad"
+    perk.desc = "The enemy ascended beyond your control; Or was that all your intention?"
+    perk.pros = {"NOOO YOU CANT JUST REVIVED WHEN I NEARLY KILL YOU","THIS IS A MESSAGE TO MY MASTER THIS IS A FIGHT YOU CANNOT WIN"};
+    perk.cons = {"Overheating suck guys","Explosive hurt","Playing fire with fire isnt a good idea"}
+   perk.activename = "By Sasquatch_htv"
+   perk.activedetails = "*Insert "Roar of the jungle dragon" here"
+   perks.atkmod = 500 -- 2 taps any bosses
+   perks.healthmod = 135
+   perks.defmod = 1200-- Even tho your beefy explosion still hurt somehow
+   perks.stammod = 3000
+   perks.shovemod = 1
+   perks.lightatkspeed = 360
+    perks.heavyatkspeed = 450
+    perks.recoilmod = 1
+    perks.accmod = 1
+     perks.reloadmod = 1
+     perks.noaimmod = false
+     perks.scavmod = 100
+     perks.harvestmod = 100
+     perks.mvtmod = 125
+     explosive_resist = true
+     perks.cripple_immune = true
+     perks.exhaust_immune = true
+     perks.frac_immune = true 
+     perks.nomorale = true
+     perks.explosivemod = 100
+    perks.backpack = true
+    perks.falldamagemod = true
+    perks.craftcostmod = -105
     end,
 })
 local Button = Tab:CreateButton({
@@ -1216,6 +1252,28 @@ local Section = Tab:CreateSection("Melees")
         local args = {
             [1] = workspace.Interactables.Workbench,
             [2] = "workbenchblueprintSHammer",
+        }
+        
+        game:GetService("ReplicatedStorage").Interactables.interaction:FireServer(unpack(args))
+        wait(1.7)
+        local args = {
+            [1] = workspace.Interactables.Workbench,
+            [2] = "workbench",
+        }
+        
+        game:GetService("ReplicatedStorage").Interactables.interaction:FireServer(unpack(args))
+     
+    end,
+ })
+
+  local Button = Tab:CreateButton({
+    Name = "Spawn LMAO Blade(Lameo/HyperLame)",
+    Callback = function()
+        local workbench = workspace.Interactables:FindFirstChild("Workbench")
+        game.Players.LocalPlayer.Character:PivotTo(workbench:GetPivot() + Vector3.new(0, 5, 0))
+        local args = {
+            [1] = workspace.Interactables.Workbench,
+            [2] = "workbenchblueprintHyperlame",
         }
         
         game:GetService("ReplicatedStorage").Interactables.interaction:FireServer(unpack(args))
