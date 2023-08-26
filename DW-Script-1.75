@@ -407,7 +407,6 @@ local perk = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["swor
     perks.falldamagemod = true
     perks.craftcostmod = -55 
     end,
-for i,v in pairs(getgc(true)) do if type(v) == "table" then if rawget(v,"cooldown") then rawset(v,"cooldown",0) elseif rawget(v,"multicooldown") then rawset(v,"multicooldown",0) end end end
 })
 local Button = Tab:CreateButton({
 	Name = "Tanziner(Zealot dont use with DS)",
@@ -478,9 +477,9 @@ local perk = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["shot
     perks.backpack = true
     perks.falldamagemod = true
     perks.craftcostmod = -55 
+for i,v in pairs(getgc(true)) do if type(v) == "table" then if rawget(v,"cooldown") then rawset(v,"cooldown",0) elseif rawget(v,"multicooldown") then rawset(v,"multicooldown",0) end end end
     end,
 })
-for i,v in pairs(getgc(true)) do if type(v) == "table" then if rawget(v,"cooldown") then rawset(v,"cooldown",0) elseif rawget(v,"multicooldown") then rawset(v,"multicooldown",0) end end end
 local Button = Tab:CreateButton({
 	Name = "Hive Master",
 	Callback = function()
