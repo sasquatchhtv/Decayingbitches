@@ -1518,28 +1518,6 @@ local Section = Tab:CreateSection("Healing/misc")
      
     end,
  })
-
-  local Button = Tab:CreateButton({
-    Name = "Spawn C4",
-    Callback = function()
-        local workbench = workspace.Interactables:FindFirstChild("Workbench")
-        game.Players.LocalPlayer.Character:PivotTo(workbench:GetPivot() + Vector3.new(0, 5, 0))
-        local args = {
-            [1] = workspace.Interactables.Workbench,
-            [2] = "workbenchblueprintRemoteEx",
-        }
-        
-        game:GetService("ReplicatedStorage").Interactables.interaction:FireServer(unpack(args))
-        wait(1.7)
-        local args = {
-            [1] = workspace.Interactables.Workbench,
-            [2] = "workbench",
-        }
-        
-        game:GetService("ReplicatedStorage").Interactables.interaction:FireServer(unpack(args))
-     
-    end,
- })
  
  local Tab = Window:CreateTab("Others", 10590477450)
  
