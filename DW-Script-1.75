@@ -371,6 +371,44 @@ local perk = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["berz
     end,
 })
 local Button = Tab:CreateButton({
+	Name = "The dark knight (Drifter)",
+	Callback = function()
+        local perks = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["drift"].basestats
+local perk = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["drift"]
+    perk.name = "The Darkest Knight"
+    perk.desc = "Keep em coming! the Knight said after taking out the 12th Battallion sent to kill him"
+    perk.pros = { "Your great at swordmanship","Defense increased heavily","0 Cooldown","Faster Swings"};
+    perk.cons = {"Do not use guns at all"}
+   perk.activename = "The blade of Azrael"
+   perk.activedetails = "Thrust the blade to their hearts. By Sasquatvh_htv"
+   perks.atkmod = 1950 -- 2 taps any bosses
+   perks.healthmod = 250
+   perks.defmod = 850 -- take 1 dmg per hit except explosion
+   perks.stammod = 1950
+   perks.shovemod = 19
+   perks.lightatkspeed = 165
+    perks.heavyatkspeed = 163
+    perks.recoilmod = 10
+    perks.accmod = 10
+     perks.reloadmod = 10
+     perks.noaimmod = false
+     perks.scavmod = 100
+     perks.harvestmod = 100
+     perks.mvtmod = 65
+     explosive_resist = true
+     perks.cripple_immune = true
+     perks.exhaust_immune = true
+     perks.frac_immune = true 
+     perks.nomorale = true
+     perks.explosivemod = 400
+     perks.grap = true
+     perks.bleed_immune = true
+    perks.backpack = true
+    perks.falldamagemod = true
+    perks.craftcostmod = 15
+    end,
+})
+local Button = Tab:CreateButton({
 	Name = "Modern Ninja(Vagabond)",
 	Callback = function()
         local perks = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["sword"].basestats
@@ -405,7 +443,8 @@ local perk = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["swor
      perks.bleed_immune = true
     perks.backpack = true
     perks.falldamagemod = true
-    perks.craftcostmod = -55 
+    perks.craftcostmod = -55
+for i,v in pairs(getgc(true)) do if type(v) == "table" then if rawget(v,"cooldown") then rawset(v,"cooldown",0) elseif rawget(v,"multicooldown") then rawset(v,"multicooldown",0) end end end
     end,
 })
 local Button = Tab:CreateButton({
