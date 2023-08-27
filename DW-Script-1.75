@@ -416,10 +416,10 @@ local Button = Tab:CreateButton({
 local perk = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["sword"]
 local perkability = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["sword"].kirablade
     perk.name = "Modern Ninja"
-    perk.desc = "CAN YOU EVEN SEE ME!?!? Said the Agent cutting the forces 1 by 1 without them even know where he is."
+    perk.desc = "C̸̖͐a̸̜̾̀n̶̹̈͠ ̵̰̈́̔ͅy̶͚͐̒o̶̙͙͂ǘ̵̞̣̕ ̵̱́e̸̩̺̚v̸̂ͅę̶̞̕n̷͖͕͒̚ ̶̣̬́̔s̶̝͖̓ḛ̷̐͗e̴̬̦̿͘ ̷̗̿m̸̟̆̚e̷̟̋͘!̶̯̦̇̾?̷̦͒!̸̫͊̀?̴͉̀̚ Said the Agent cutting the forces one by one without them even know where he is."
     perk.pros = { "More Ammunition.","Speed, No Fall Dmg, No Explosive dmg, and take barely any HP upon shot.","0 Cooldown","Faster Swings"};
     perk.cons = {"There are no downsides, your just OP as hell."}
-   perk.activename = "The Moon Katana Slash"
+   perk.activename = "The M̶̥̻̓o̴̟̹͌̚ö̶͕́̈n̴̨̅̐ ̸̱̰͋K̷̭̞͌͠a̷̭̩̽̊ţ̵̍ā̶͈͈n̴̥̊a̷̯̓̽ Slash"
    perk.activedetails = "Slash your enemies with a strike that will turn their flesh to paper."
    perks.atkmod = 150 -- 2 taps any bosses
    perks.healthmod = 250
@@ -445,7 +445,7 @@ local perkability = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"]
      perks.bleed_immune = true
     perks.backpack = true
     perks.falldamagemod = true
-    perks.craftcostmod = -55 
+    perks.craftcostmod = 10 
     end,
 })
 local Button = Tab:CreateButton({
