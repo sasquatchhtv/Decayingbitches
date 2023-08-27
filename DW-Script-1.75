@@ -414,6 +414,7 @@ local Button = Tab:CreateButton({
 	Callback = function()
         local perks = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["sword"].basestats
 local perk = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["sword"]
+local perkability = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["sword"].kirablade
     perk.name = "The Modern Ninja"
     perk.desc = "CAN YOU EVEN SEE ME?!"
     perk.pros = { "More Ammunition.","Speed, No Fall Dmg, No Explosive dmg, and take barely any HP upon shot.","0 Cooldown","Faster Swings"};
@@ -1231,7 +1232,7 @@ local Button = Tab:CreateButton({
  })
 
   local Button = Tab:CreateButton({
-    Name = "spawn GreenStim",
+    Name = "spawn Red Stim",
     Callback = function()
         local workbench = workspace.Interactables:FindFirstChild("Workbench")
         game.Players.LocalPlayer.Character:PivotTo(workbench:GetPivot() + Vector3.new(0, 5, 0))
@@ -1253,7 +1254,7 @@ local Button = Tab:CreateButton({
  })
 
   local Button = Tab:CreateButton({
-    Name = "spawn GreenStim",
+    Name = "spawn PurpleStim",
     Callback = function()
         local workbench = workspace.Interactables:FindFirstChild("Workbench")
         game.Players.LocalPlayer.Character:PivotTo(workbench:GetPivot() + Vector3.new(0, 5, 0))
@@ -1275,7 +1276,7 @@ local Button = Tab:CreateButton({
  })
 
   local Button = Tab:CreateButton({
-    Name = "spawn GreenStim",
+    Name = "spawn UsedStim(admin item completely useless)",
     Callback = function()
         local workbench = workspace.Interactables:FindFirstChild("Workbench")
         game.Players.LocalPlayer.Character:PivotTo(workbench:GetPivot() + Vector3.new(0, 5, 0))
