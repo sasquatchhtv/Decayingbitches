@@ -23,7 +23,7 @@ local Webhook_Enabled = false
 local Webhook_URL = ""
 
 local Window = Rayfield:CreateWindow({
-	Name = "Decaying winter Script by Sledge and Sasquatch",
+	Name = "SasSledge Decaying Winter Script",
 	LoadingTitle = "DECAYING WINTER SCRIPT [mak kau hijau edition]",
 	LoadingSubtitle = "made by Sledge and sasquatch",
 	ConfigurationSaving = {
