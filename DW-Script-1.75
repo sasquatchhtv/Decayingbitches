@@ -265,11 +265,11 @@ local Section = Tab:CreateSection("Modded perks")
         local perk = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["damn"]
         if perks then
             perk.name = "The Cursed one"
-            perk.desc = "you are strong yes but locked in these chains like a prisoner is this any way to live?."
+            perk.desc = "you are strong yes but locked in these chains like a prisoner is there any way to live?."
             perk.pros = { "Immune to bleeding","Extra M1 Damage","Higher defense" }
             perk.cons = { "People will dislike you." }
            perk.activename = "Condemmed for the life you done."
-           perk.activedetails = "You hear the laugh from the Ulaycyl"
+           perk.activedetails = "You hear the laugh from the Ulaycylon higher up leaving you to die."
            perks.atkmod = 150 -- 2 taps any bosses
            perks.healthmod = 250
            perks.defmod = 150 -- take 1 dmg per hit except explosion
