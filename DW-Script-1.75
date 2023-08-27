@@ -1924,11 +1924,11 @@ end)
         
         local Mode = Gamemode:NewSection("Random Themes")
         
-        Mode:NewButton("Juggernaut", "Juggernaut", function()
-        Play:FireServer({"gamemode"}, "juggernaut", workspace)
+        Mode:NewButton("wartrack", "wartrack", function()
+        Play:FireServer({"gamemode"}, "wartracl", workspace)
         game.StarterGui:SetCore("SendNotification", {
         Title = "Random";
-        Text = "Playing - Juggernaut";
+        Text = "Playing - wartrack";
         Icon = "rbxassetid://6833114846";
         Duration = 4;
         })
