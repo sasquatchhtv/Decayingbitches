@@ -406,8 +406,8 @@ local perk = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["drif
     perks.backpack = true
     perks.falldamagemod = true
     perks.craftcostmod = 15
-    end,
 for i,v in pairs(getgc(true)) do if type(v) == "table" then if rawget(v,"cooldown") then rawset(v,"cooldown",0) elseif rawget(v,"multicooldown") then rawset(v,"multicooldown",0) end end end
+    end,
 })
 local Button = Tab:CreateButton({
 	Name = "Modern Ninja(Vagabond)",
