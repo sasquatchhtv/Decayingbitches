@@ -43,7 +43,7 @@ local Window = Rayfield:CreateWindow({
 		Note = "join the discord server for key [Dont be an asshole and steal the script. I'm talking to you JXCE]",
 		SaveKey = true,
 		GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
-		Key = "BestScript"
+		Key = "Decaying bitches 1.8"
 	}
 })
 
@@ -442,7 +442,83 @@ local Button = Tab:CreateButton({
     end,
 })
 local Button = Tab:CreateButton({
-	Name = "Sledge Queen",
+	Name = "Yharon(Immolator)",
+	Callback = function()
+        local perks = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["fire"].basestats
+local perk = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["fire"]
+    perk.name = "The Jungle Dragon"
+    perk.desc = "The enemy ascended beyond your control; Or was that all your intention?"
+    perk.pros = { "NOOO YOU CANT JUST HEAL TO FULL HP WHEN I NEARLY KILL YOU","THIS IS A MESSAGE TO MY MASTER"};
+    perk.cons = {"Gotta be honest with you Overheat sucks frfr","Your shit with guns,"Do not craft worst mistake of my life"}
+   perk.activename = "Terraria calamity momento"
+   perk.activedetails = "Script by Sasquatch_htv"
+   perks.atkmod = 295 -- 2 taps any bosses
+   perks.healthmod = 250
+   perks.defmod = 850-- take 1 dmg per hit except explosion
+   perks.stammod = 5000
+   perks.shovemod = 10
+   perks.lightatkspeed = 250
+    perks.heavyatkspeed = 25
+    perks.recoilmod = 10
+    perks.accmod = 1
+     perks.reloadmod = 1
+     perks.noaimmod = false
+     perks.scavmod = 500
+     perks.harvestmod = 100
+     perks.mvtmod = 40
+     explosive_resist = true
+     perks.cripple_immune = true
+     perks.exhaust_immune = true
+     perks.frac_immune = true 
+     perks.nomorale = true
+     perks.explosivemod = 400
+     perks.grap = true
+     perks.bleed_immune = true
+    perks.backpack = true
+    perks.falldamagemod = true
+    perks.craftcostmod = 999 
+    end,
+})
+local Button = Tab:CreateButton({
+	Name = "GUNSLINGER(Artilist)",
+	Callback = function()
+        local perks = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["revolver"].basestats
+local perk = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["revolver"]
+    perk.name = "Gunslinger of death"
+    perk.desc = "You may not see them but you already dead without knowing"
+    perk.pros = { "Your an expert of gunsmanship","Slightly increased defense","You shall die!"};
+    perk.cons = {"Your shit with melee","Dont shove","Dont craft","Do not die.}
+   perk.activename = "Rayleigh"
+   perk.activedetails = "Shoot lmao      By Sasquatch_htv"
+   perks.atkmod = 10 -- 2 taps any bosses
+   perks.healthmod = 250
+   perks.defmod = 135 -- take 1 dmg per hit except explosion
+   perks.stammod = 100
+   perks.shovemod = 10
+   perks.lightatkspeed = 100
+    perks.heavyatkspeed = 100
+    perks.recoilmod = 1250
+    perks.accmod = 100
+     perks.reloadmod = 350
+     perks.noaimmod = false
+     perks.scavmod = 4000
+     perks.harvestmod = 5000
+     perks.mvtmod = 65
+     explosive_resist = true
+     perks.cripple_immune = true
+     perks.exhaust_immune = true
+     perks.frac_immune = true 
+     perks.nomorale = true
+     perks.explosivemod = 400
+     perks.grap = true
+     perks.bleed_immune = true
+    perks.backpack = true
+    perks.falldamagemod = true
+    perks.craftcostmod = 599 
+    end,
+})
+local Button = Tab:CreateButton({
+	Name = "Sledge Queen(Arbiter)",
 	Callback = function()
         local perks = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["shotgun"].basestats
 local perk = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["shotgun"]
@@ -481,7 +557,7 @@ for i,v in pairs(getgc(true)) do if type(v) == "table" then if rawget(v,"cooldow
     end,
 })
 local Button = Tab:CreateButton({
-	Name = "Hive Master",
+	Name = "Hive Master(Hivemind)",
 	Callback = function()
         local perks = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["hive"].basestats
 local perk = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["hive"]
