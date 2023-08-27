@@ -410,44 +410,6 @@ for i,v in pairs(getgc(true)) do if type(v) == "table" then if rawget(v,"cooldow
     end,
 })
 local Button = Tab:CreateButton({
-	Name = "Mercenary (executioner)",
-	Callback = function()
-        local perks = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["gunner"].basestats
-local perk = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["gunner"]
-    perk.name = "Mercenary"
-    perk.desc = "The only reason you are hired by the Ulaycylon is that you will always get the job done no question asked."
-    perk.pros = { "You are an expert at both gunsmanship and Swordmanship","Slightly increased defense","faster shove","Do your job professionaly"};
-    perk.cons = {"Unlike ther rest of the modded perks you have no immunity","(Basicly you are just a normal person)"}
-   perk.activename = "Death vision Goggles"
-   perk.activedetails = "A modified goggles you recived by the agency. Here's a thing you dont like using goggles at all but you have to use it since they pay well and they forced you to. Lowering the god forsaken goggles You can see the enemy infomation; Killing them will give you their bounty For god know why the Agency will only register that you have claim bounties by pulling off the goggles how fucking stupid is that.   
-   perks.atkmod = 105 -- 2 taps any bosses
-   perks.healthmod = 250
-   perks.defmod = 125 -- take 1 dmg per hit except explosion
-   perks.stammod = 100
-   perks.shovemod = 159
-   perks.lightatkspeed = 175
-    perks.heavyatkspeed = 150
-    perks.recoilmod = 1000
-    perks.accmod = 150
-     perks.reloadmod = 165
-     perks.noaimmod = false
-     perks.scavmod = 4000
-     perks.harvestmod = 100
-     perks.mvtmod = 55
-     explosive_resist = true
-     perks.cripple_immune = true
-     perks.exhaust_immune = true
-     perks.frac_immune = true 
-     perks.nomorale = true
-     perks.explosivemod = 400
-     perks.grap = true
-     perks.bleed_immune = true
-    perks.backpack = true
-    perks.falldamagemod = true
-    perks.craftcostmod = -5
-    end,
-})
-local Button = Tab:CreateButton({
 	Name = "Modern Ninja(Vagabond)",
 	Callback = function()
         local perks = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["sword"].basestats
