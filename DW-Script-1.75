@@ -59,6 +59,16 @@ local Button = Tab:CreateButton({
         loadstring(game:HttpGet('https://raw.githubusercontent.com/ryderfreeman/decaying-winter-old-goodwill/main/script1'))()
     end,
 })
+local Button = Tab:CreateButton({
+	Name = "Fog Removal",
+	Callback = function()
+        game.Lighting.FogEnd = 100000
+        game.Lighting.FogStart = 0
+        game.Lighting.ClockTime = 14
+        game.Lighting.Brightness = 2
+        game.Lighting.GlobalShadows = false
+    end,
+})
 local Section = Tab:CreateSection("Essential")
 local Button = Tab:CreateButton({
 	Name = "Extra Abilitys(keybinds, Y, N, V)",
