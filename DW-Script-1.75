@@ -199,8 +199,8 @@ UserInputService.InputBegan:Connect(function(input, Typing)
 	    for i=1, 1 do
             workspace.ServerStuff.dropAmmo:FireServer("rations", "MRE")
             workspace.ServerStuff.dropAmmo:FireServer("rations", "Bottle")
-            workspace.ServerStuff.dropAmmo:FireServer("ammo", "Long Ammo")
-              workspace.ServerStuff.dropAmmo:FireServer("ammo", "Small Ammo")
+            workspace.ServerStuff.dropAmmo:FireServer("ammo", "Long")
+              workspace.ServerStuff.dropAmmo:FireServer("ammo", "Small")
             wait(0.1)
         end
     end
@@ -254,6 +254,67 @@ dropAmmo:FireServer("scrap", Value)
     end,
  })
 
+ local Button = Tab:CreateButton({
+    Name = "spawn Ammo: Medium",
+    Callback = function()
+local args = {
+    [1] = "Medium",
+    [2] = 15,
+    [3] = false
+}
+
+workspace:WaitForChild("ServerStuff"):WaitForChild("dropAmmo"):FireServer(unpack(args))
+ local Button = Tab:CreateButton({
+    Name = "spawn Ammo: Short",
+    Callback = function()
+local args = {
+    [1] = "Short",
+    [2] = 15,
+    [3] = false
+}
+
+workspace:WaitForChild("ServerStuff"):WaitForChild("dropAmmo"):FireServer(unpack(args))
+ })
+ local Button = Tab:CreateButton({
+    Name = "spawn Ammo: Short",
+    Callback = function()
+local args = {
+    [1] = "Short",
+    [2] = 15,
+    [3] = false
+}
+
+workspace:WaitForChild("ServerStuff"):WaitForChild("dropAmmo"):FireServer(unpack(args))
+ local Button = Tab:CreateButton({
+    Name = "spawn Ammmo Heavy",
+    Callback = function()
+local args = {
+    [1] = "Heavy",
+    [2] = 15,
+    [3] = false
+}
+
+workspace:WaitForChild("ServerStuff"):WaitForChild("dropAmmo"):FireServer(unpack(args))
+ local Button = Tab:CreateButton({
+    Name = "spawn Ammo: Small",
+    Callback = function()
+local args = {
+    [1] = "Small",
+    [2] = 15,
+    [3] = false
+}
+
+workspace:WaitForChild("ServerStuff"):WaitForChild("dropAmmo"):FireServer(unpack(args))
+ local Button = Tab:CreateButton({
+    Name = "spawn Ammo: Long",
+local args = {
+    [1] = "Long",
+    [2] = 15,
+    [3] = false
+}
+
+workspace:WaitForChild("ServerStuff"):WaitForChild("dropAmmo"):FireServer(unpack(args))
+ })
  local Button = Tab:CreateButton({
     Name = "spawn ration: MRE",
     Callback = function()
