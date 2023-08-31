@@ -253,32 +253,6 @@ local dropAmmo = ServerStuff.dropAmmo
 dropAmmo:FireServer("scrap", Value)
     end,
  })
- local Button = Tab:CreateButton({
-    Name = "spawn ration: MRE",
-    Callback = function()
-        game:GetService("Workspace").ServerStuff.dropAmmo:FireServer("rations", "MRE")
-    end,
- })
-
- local Button = Tab:CreateButton({
-    Name = "spawn ration: Bottle",
-    Callback = function()
-        game:GetService("Workspace").ServerStuff.dropAmmo:FireServer("rations", "Bottle")
-    end,
- })
-  local Button = Tab:CreateButton({
-    Name = "spawn Ammo: Long",
-    Callback = function()
-local args = {
-    [1] = "Long",
-    [2] = 15,
-    [3] = true
-}
-
-workspace:WaitForChild("ServerStuff"):WaitForChild("dropAmmo"):FireServer(unpack(args))
---and the script only drops 5-20 ammo at once
-    end,
- })
 local Section = Tab:CreateSection("Modded perks")
  local Button = Tab:CreateButton({
 	Name = "Left 2 Die(Dammed)",
@@ -324,7 +298,7 @@ local perk = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["shie
     perk.cons = {"The hardsuit takes heavy damage by explosion avoid them."}
    perk.activename = "Death Squad HardSuit"
    perk.activedetails = "> DO NOT HARM DEATH SQUAD AGENTS, ELIMINATE ALL COTESTANTS AND PROTECT YOUR OWN EXSISTENCE"
-   perks.atkmod = 365 -- 2 taps any bosses
+   perks.atkmod = 35 -- 2 taps any bosses
    perks.healthmod = 135
    perks.defmod = 1250-- Even tho your beefy explosion still hurt somehow
    perks.stammod = 200
@@ -645,6 +619,98 @@ local perk = require(workspace.ServerStuff.Statistics["CLASS_STATISTICS"])["hive
 })
 
  local Tab = Window:CreateTab("Item Spawn", 10590477450)
+local Section = Tab:CreateSection("Rations/Ammo")
+ local Button = Tab:CreateButton({
+    Name = "spawn ration: MRE",
+    Callback = function()
+        game:GetService("Workspace").ServerStuff.dropAmmo:FireServer("rations", "MRE")
+    end,
+ })
+
+ local Button = Tab:CreateButton({
+    Name = "spawn ration: Bottle",
+    Callback = function()
+        game:GetService("Workspace").ServerStuff.dropAmmo:FireServer("rations", "Bottle")
+    end,
+ })
+  local Button = Tab:CreateButton({
+    Name = "spawn Ammo: Long",
+    Callback = function()
+local args = {
+    [1] = "Long",
+    [2] = 15,
+    [3] = true
+}
+
+workspace:WaitForChild("ServerStuff"):WaitForChild("dropAmmo"):FireServer(unpack(args))
+--and the script only drops 5-20 ammo at once
+    end,
+ })
+  local Button = Tab:CreateButton({
+    Name = "spawn Ammo: Medium",
+    Callback = function()
+local args = {
+    [1] = "Medium",
+    [2] = 15,
+    [3] = true
+}
+
+workspace:WaitForChild("ServerStuff"):WaitForChild("dropAmmo"):FireServer(unpack(args))
+--and the script only drops 5-20 ammo at once
+    end,
+ })
+  local Button = Tab:CreateButton({
+    Name = "spawn Ammo: Short",
+    Callback = function()
+local args = {
+    [1] = "Short",
+    [2] = 15,
+    [3] = true
+}
+
+workspace:WaitForChild("ServerStuff"):WaitForChild("dropAmmo"):FireServer(unpack(args))
+--and the script only drops 5-20 ammo at once
+    end,
+ })
+  local Button = Tab:CreateButton({
+    Name = "spawn Ammo: Small",
+    Callback = function()
+local args = {
+    [1] = "Small",
+    [2] = 15,
+    [3] = true
+}
+
+workspace:WaitForChild("ServerStuff"):WaitForChild("dropAmmo"):FireServer(unpack(args))
+--and the script only drops 5-20 ammo at once
+    end,
+ })
+  local Button = Tab:CreateButton({
+    Name = "spawn Ammo: Light",
+    Callback = function()
+local args = {
+    [1] = "Light",
+    [2] = 15,
+    [3] = true
+}
+
+workspace:WaitForChild("ServerStuff"):WaitForChild("dropAmmo"):FireServer(unpack(args))
+--and the script only drops 5-20 ammo at once
+    end,
+ })
+  local Button = Tab:CreateButton({
+    Name = "spawn Ammo: Shells",
+    Callback = function()
+local args = {
+    [1] = "Shells",
+    [2] = 15,
+    [3] = true
+}
+
+workspace:WaitForChild("ServerStuff"):WaitForChild("dropAmmo"):FireServer(unpack(args))
+--and the script only drops 5-20 ammo at once
+    end,
+ })
 local Section = Tab:CreateSection("Guns")
  local Button = Tab:CreateButton({
     Name = "spawn UMP",
