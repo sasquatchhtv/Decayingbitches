@@ -23,7 +23,7 @@ local Webhook_Enabled = false
 local Webhook_URL = ""
 
 local Window = Rayfield:CreateWindow({
-	Name = "SasSledge Decaying Winter Script Free(THANKS FOR LVL 3 NITRO",
+	Name = "I DID NOT STEAL YOUR MONEY YOU FAG FELIX IS A BITCHASS SKID",
 	LoadingTitle = "DECAYING WINTER SCRIPT [mak kau hijau edition]",
 	LoadingSubtitle = "made by Sasquatch owned by Ry",
 	ConfigurationSaving = {
@@ -33,7 +33,7 @@ local Window = Rayfield:CreateWindow({
 	},
         Discord = {
         	Enabled = true,
-        	Invite = "sledgequeen", -- The Discord invite code, do not include discord.gg/
+        	Invite = "eEhhsy8Z", -- The Discord invite code, do not include discord.gg/
         	RememberJoins = true -- Set this to false to make them join the discord every time they load it up
         },
 	KeySystem = true, -- Set this to true to use our key system
