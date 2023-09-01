@@ -39,11 +39,11 @@ local Window = Rayfield:CreateWindow({
 	KeySystem = true, -- Set this to true to use our key system
 	KeySettings = {
 		Title = "KYS Felix you retarded skid",
-		Subtitle = "Key required to use script! [KEY CHANGES EVERY UPDATE!]",
-		Note = "join the discord server for key [Dont be an asshole and steal the script. I'm talking to you JXCE]",
-		SaveKey = true,
+		Subtitle = "Felix stop being such a crybaby",
+		Note = "Join the Sas discord for key[eEhhsy8Z]",
+                SaveKey = false,
 		GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
-		Key = "Decayed Bitches"
+		Key = "Fuck felix"
 	}
 })
 
