@@ -24,7 +24,7 @@ local Webhook_URL = ""
 
 local Window = Rayfield:CreateWindow({
 	Name = "I DID NOT STEAL YOUR MONEY YOU FAG FELIX IS A BITCHASS SKID",
-	LoadingTitle = "DECAYING WINTER SCRIPT [mak kau hijau edition]",
+	LoadingTitle = "Join the new discord",
 	LoadingSubtitle = "made by Sasquatch owned by Ry",
 	ConfigurationSaving = {
 		Enabled = false,
@@ -38,12 +38,12 @@ local Window = Rayfield:CreateWindow({
         },
 	KeySystem = true, -- Set this to true to use our key system
 	KeySettings = {
-		Title = "Sexy key system",
+		Title = "KYS Felix you retarded skid",
 		Subtitle = "Key required to use script! [KEY CHANGES EVERY UPDATE!]",
 		Note = "join the discord server for key [Dont be an asshole and steal the script. I'm talking to you JXCE]",
 		SaveKey = true,
 		GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
-		Key = "Decaying bitches 1.8"
+		Key = "Decayed Bitches"
 	}
 })
 
