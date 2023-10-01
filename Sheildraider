@@ -100,48 +100,6 @@ function spawnItem(itemName, slot)
         end
     end
 
-UserInputService.InputBegan:Connect(function(input, gameProcessedEvent)
-    if gameProcessedEvent == true then
-        return
-    end
-        if input.KeyCode == Enum.KeyCode.G then
-
-           
-            local direction = char.PrimaryPart.CFrame.Position + Vector3.new(0, .5, 0)
-            local bodyPosition = Instance.new("BodyPosition")
-            bodyPosition.MaxForce = Vector3.new(math.huge, math.huge, math.huge)
-            bodyPosition.P = 27500
-
-            if UserInputService:IsKeyDown(Enum.KeyCode.W) == true then direction -= char.PrimaryPart.CFrame.ZVector * 18 end
-            if UserInputService:IsKeyDown(Enum.KeyCode.A) == true then direction -= char.PrimaryPart.CFrame.XVector * 18 end
-            if UserInputService:IsKeyDown(Enum.KeyCode.S) == true then direction += char.PrimaryPart.CFrame.ZVector * 18 end
-            if UserInputService:IsKeyDown(Enum.KeyCode.D) == true then direction += char.PrimaryPart.CFrame.XVector * 18 end
-
-            if UserInputService:IsKeyDown(Enum.KeyCode.W) == false and UserInputService:IsKeyDown(Enum.KeyCode.A) == false and UserInputService:IsKeyDown(Enum.KeyCode.S) == false and UserInputService:IsKeyDown(Enum.KeyCode.D) == false then direction += char.PrimaryPart.CFrame.ZVector * 18 end
-
-            workspace.ServerStuff.playAudio:FireServer({"soldiers"}, "dash", char.PrimaryPart)
-            bodyPosition.Position = direction
-            bodyPosition.Parent = char.PrimaryPart
-char.Humanoid:LoadAnimation(animfolder.special.dash):Play()
-
-            task.wait(.2)
-            bodyPosition:Destroy()
-        end
-       
-        if input.KeyCode == Enum.KeyCode.V then
-            if posing == false then 
-                posing = true
-                restanim:Play()
-char.HumanoidRootPart.Anchored = true
-            else
-                posing = false
-                restanim:Stop()
-char.HumanoidRootPart.Anchored = false
-end
-        end
-  
-end)
-
     for index, value in pairs(require(workspace.ServerStuff.Statistics.W_STATISTICS)) do
         if string.match(string.lower(index), string.lower(itemName)) ~= nil then
             itemName = index
