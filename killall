@@ -1,0 +1,17 @@
+local UIS = game:GetService("UserInputService")
+local WeaponStats = require(game.Workspace.ServerStuff.Statistics["W_STATISTICS"])
+local Data = WeaponStats["TKnife"]
+function hey()
+    local enemies = workspace.activeHostiles:GetChildren()
+    for i = 1, #enemies do
+        local enemy = enemies[i]
+        workspace.ServerStuff.throwWeapon:FireServer("TKnife", 1000, enemy.HumanoidRootPart.CFrame:ToWorldSpace(0,0,-5), 0.19341856241226196, Data, 0)
+    end
+end
+
+
+UIS.InputBegan:Connect(function(Input)
+if Input.KeyCode == Enum.KeyCode.Z then
+    task.spawn(hey)
+end
+end)
